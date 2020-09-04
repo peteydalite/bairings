@@ -11,18 +11,20 @@ public class Punk {
     String tagline;
     String description;
     String image_url;
+    double abv;
     String[] food_pairing;
 
 
     public Punk(){
 
     }
-    public Punk(int id, String name, String tagline, String description, String image_url, String[] food_pairing) {
+    public Punk(int id, String name, String tagline, String description, String image_url, double abv, String[] food_pairing) {
         this.id = id;
         this.name = name;
         this.tagline = tagline;
         this.description = description;
         this.image_url = image_url;
+        this.abv = abv;
         this.food_pairing = food_pairing;
     }
 
@@ -71,5 +73,13 @@ public class Punk {
 
     public void setFood_pairing(String[] food_pairing) {
         this.food_pairing = food_pairing;
+    }
+
+    public double getAbv() {
+        return abv;
+    }
+
+    public void setAbv(double abv) {
+        this.abv = abv;
     }
 }
