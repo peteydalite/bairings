@@ -13,6 +13,9 @@ function getPairings(){
     var splitFoods = foods.split(" ");
     fetch(BASE_API + '/food?foods=' + splitFoods.join("_"))
        .then(response => response.json())
-       .then(data => console.log(data));
+       .then(data => {
+
+       })
+//       .then(data => console.log(data));
 
 }

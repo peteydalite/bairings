@@ -26,6 +26,9 @@ public class Punk {
         this.image_url = image_url;
         this.abv = abv;
         this.food_pairing = food_pairing;
+
+        char s = '1';
+
     }
 
     public int getId() {
@@ -82,4 +85,5 @@ public class Punk {
     public void setAbv(double abv) {
         this.abv = abv;
     }
+
 }
