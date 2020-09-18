@@ -4,7 +4,7 @@ body{
 
 #header-container{
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-size: 25px;
     text-align: center;
 }
@@ -17,6 +17,56 @@ body{
     margin: 9px;
 }
 
-h3{
+h2{
     text-align: center;
+}
+
+div#beer-container{
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.beer-card{
+    width: 20%;
+    height: 40%;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-bottom: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "title"
+    "pic";
+}
+
+.beer-card:hover{
+    color: white;
+    border-radius: 5%;
+}
+
+
+.beer-card H3{
+    grid-area: title;
+}
+.beer-card img{
+    grid-area: pic;
+    max-width: 20vw;
+    max-height: 15vh;
+    justify-self: center;
+}
+
+.beer-card img:hover{
+    mas-width: 30vw;
+    max-height: 20vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.display-setting{
+    display: none;
 }

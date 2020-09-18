@@ -2,8 +2,16 @@ const date = Date.now();
 
 document.addEventListener('DOMContentLoaded', () =>{
 
-    document.getElementById('age_submit').addEventListener('click', checkAge);
-    
+    const sub = document.getElementById('age_submit');
+    sub.addEventListener('click', checkAge);
+
+    const input = document.getElementById('birthDate');
+    input.addEventListener('keyup', function(event){
+            if(event.keyCode === 13){
+                event.preventDefault();
+                sub.click();
+            };
+        });
     
 });
 
